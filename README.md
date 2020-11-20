@@ -40,7 +40,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Rotating-Circle-TextB</h3>
+  <h3 align="center">Rotating-Circle-Text</h3>
 
   <p align="center">
   Code for trendy rotating text around an arrow. 
