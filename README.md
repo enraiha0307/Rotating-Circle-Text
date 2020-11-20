@@ -48,7 +48,7 @@
     <!-- <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
     <br /> -->
     <br />
-    <a href="https://naughty-euclid-b5ea25.netlify.app/">View Demo</a>
+    <a href="https://enraiha0307.github.io/Rotating-Circle-Text/. ">View Demo</a>
     ·
     <a href="https://github.com/enraiha0307/Rotating-Circle-Text/issues">Report Bug</a>
     ·
