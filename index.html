@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CircleType Arrow</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="circletype.min.js"></script>
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="circular-text">
+            <span id="rotated">Eat • Sleep • Netflix • Repeat • Eat • Sleep • Netflix • Repeat • Eat • Sleep • Netflix • Repeat
+                 </span>
+        </div>
+        <div class="arrow">
+            <ion-icon name="arrow-down"></ion-icon>
+        </div>
+    </body>
+    <script>
+        const circleType = new CircleType(
+            document.getElementById("rotated")
+        ).radius(80);
+
+        $(window).scroll(function() {
+            var offset = $(window).scrollTop();
+            offset = offset * 0.4;
+
+            $(".circular-text").css({
+                "-moz-transform": "rotate(" + offset + "deg)",
+                "-webkit-transform": "rotate(" + offset + "deg)",
+                "-o-transform": "rotate(" + offset + "deg)",
+                "-ms-transform": "rotate(" + offset + "deg)",
+                transform: "rotate(" + offset + "deg)"
+            });
+        });
+    </script>
+    </html>
